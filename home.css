@@ -4,11 +4,11 @@ body {
 }
 /* selecting nav-title */
 .navbar-brand {
-    font-size: 25px;
+    font-size: 20px;
 }
 /* selecting the nav items */
 .nav-item {
-    font-size: 25px;
+    font-size: 20px;
     margin-left: 20px;
 }
 /* the initial welcome jumbo */
@@ -65,4 +65,20 @@ body {
 
 .aboutTitle {
     color: papayawhip;
+}
+
+/* the 4th Contact Jumbo */
+.jumbo4 {
+    height: 500px;
+    background-color: white;
+}
+
+
+/* footer stuff */
+.footer {
+    background-color: black;
+}
+
+.copyright {
+    color: white;
 }

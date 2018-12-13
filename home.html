@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-        <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Questrial|Staatliches" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Questrial|Staatliches" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -14,7 +14,7 @@
 
 <body>
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-        <div class="navbar-brand" href="#">Francis Luong</div>
+        <a class="navbar-brand" href="#">Francis Luong</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -34,13 +34,13 @@
             <span class="navbar-text">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Projects<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#Projects">Projects<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#About">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#Contact">Contact</a>
                     </li>
                 </ul>
             </span>
@@ -67,7 +67,7 @@
         </div>
     </div>
 
-    <div class="jumbotron jumbotron-fluid jumbo2">
+    <div class="jumbotron jumbotron-fluid jumbo2" id="Projects">
         <div class="container projects">
             <h1 class="display-3">My Projects</h1>
             <div class="row">
@@ -80,8 +80,9 @@
                             <a href="https://glacial-refuge-45870.herokuapp.com/" class="btn btn-primary" target="_blank">
                                 <img src="./images/budgetmax-poster.png" alt="BudgetMax">
                             </a>
-                            <p class="card-text">This is a Financial Based Application that allows the user to keep track of
-                                    all of their transactions</p>
+                            <p class="card-text">This is a Financial Based Application that allows the user to keep
+                                track of
+                                all of their transactions</p>
                         </div>
                     </div>
                 </div>
@@ -94,7 +95,8 @@
                             <a href="https://player-vs-world.herokuapp.com/login" class="btn btn-primary" target="_blank">
                                 <img src="./images/image.png" alt="PlayerVSWorld">
                             </a>
-                            <p class="card-text">This is a Social Media Based Application that allows gamers to connect through forums and inbox-messaging.</p>
+                            <p class="card-text">This is a Social Media Based Application that allows gamers to connect
+                                through forums and inbox-messaging.</p>
                         </div>
                     </div>
                 </div>
@@ -102,11 +104,12 @@
         </div>
     </div>
 
-    <div class="jumbotron jumbotron-fluid jumbo3">
+    <div class="jumbotron jumbotron-fluid jumbo3" id="About">
         <div class="container about">
             <h1 class="display-3 aboutTitle">About Me</h1>
             <hr class="my-2">
-            <p class="mySum">I was Born and Raised in Charlotte, North Carolina. I've been in the service industry for over 7 years
+            <p class="mySum">I was Born and Raised in Charlotte, North Carolina. I've been in the service industry for
+                over 7 years
                 and then decided to make a transition into the world of programming.
                 As of Fall 2018, I entered into UNCC's Full Stack Coding Bootcamp. I went from Zero knowledge in
                 Programming to a complete Full Stack Web Developer in 3 Months while working Full Time at a bar and
@@ -114,11 +117,63 @@
         </div>
     </div>
 
+    <div class="jumbotron jumbotron-fluid jumbo4" id="Contact">
+        <div class="container contact">
+            <h1 class="display-3">Contact</h1>
+            <div class="container form-top">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
+                        <div class="panel panel-danger">
+                            <div class="panel-body">
+                                <form id="reused_form">
+                                    <div class="form-group">
+                                        <label><i class="fa fa-user" aria-hidden="true"></i> Name</label>
+                                        <input type="text" name="name" class="form-control" placeholder="Enter Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label><i class="fa fa-envelope" aria-hidden="true"></i> Email</label>
+                                        <input type="email" name="email" class="form-control" placeholder="Enter Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label><i class="fa fa-comment" aria-hidden="true"></i> Message</label>
+                                        <textarea rows="3" name="message" class="form-control" placeholder="Type Your Message"></textarea>
+                                    </div>
 
-    <div class="contact">
 
+                                    <div class="form-group">
+                                        <button class="btn btn-raised btn-block btn-primary">Post →</button>
+                                    </div>
+                                </form>
+                                <div id="error_message" style="width:100%; height:100%; display:none; ">
+                                    <h4>Error</h4>
+                                    Sorry there was an error sending your form.
+                                </div>
+                                <div id="success_message" style="width:100%; height:100%; display:none; ">
+                                    <h2>Success! Your Message was Sent Successfully.</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; Francis Luong's Portfolio</span>
+                </div>
+                <!-- icons for github and linked in and whatnot go here! :D -->
+                <div class="col-md-4">
+
+                </div>
+                <!-- i think this is blank. still dont know -->
+                <div class="col-md-4"></div>
+            </div>
+        </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <script src="home.js"></script>
