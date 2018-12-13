@@ -1,0 +1,68 @@
+/* global body selector */
+body {
+    font-family: Staatliches, serif;
+}
+/* selecting nav-title */
+.navbar-brand {
+    font-size: 25px;
+}
+/* selecting the nav items */
+.nav-item {
+    font-size: 25px;
+    margin-left: 20px;
+}
+/* the initial welcome jumbo */
+.jumbo1 {
+    background-image: url("images/cltskyline.jpg");
+    height: 900px;
+}
+/* the container for all items inside the welcome jumbo */
+.welcomeJumbo {
+    margin-top: 150px;
+    text-align: center;
+}
+/* the welcome words in welcome jumbo */
+.welcome {
+    font-size: 125px;
+    font-weight: bold;
+    font-family: Abril-Fatface;
+    color: white;
+}
+/* the words "check out my site"  */
+.checkIt {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Abril-Fatface;
+    color: white;
+}
+/* the 2nd My Project Jumbo */
+.jumbo2 {
+    height: 900px;
+    background-color: white;
+}
+
+.card-title {
+    font-size: 40px;
+}
+
+.card-text {
+    font-size: 22px;
+    font-family: Questrial;
+}
+/* the 3rd About Me Jumbo */
+.jumbo3 {
+    height: 900px;
+    background-image: url("images/about.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mySum {
+    font-size: 25px;
+    font-weight: bold;
+    color: papayawhip;
+}
+
+.aboutTitle {
+    color: papayawhip;
+}
